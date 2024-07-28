@@ -1,0 +1,9 @@
+###
+@environment = "dev2";
+@space = "fictunykp8pa";
+@accessToken = "EI45a7Aq77YvFDdUt8lLX8M_3aoJxB4B5dML7-V27dc";
+
+###
+
+POST https://cdn.contentful.com/spaces/{{space}}/environments/{{environment}}/entries?access_token={{accessToken}} HTTP/1.1
+Content-Type: application/json

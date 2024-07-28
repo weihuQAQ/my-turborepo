@@ -1,0 +1,78 @@
+{
+  "id": "1.Page",
+  "name": "PLP - all",
+  "template": {
+    "id": "2.Template",
+    "name": "PLP - Template A",
+    "content": [
+      {
+        "id": "5.Header",
+        "name": "PLP Header",
+        "configuration": "{ \"className\": \"header\" }"
+      },
+      {
+        "id": "6.AssetContentWidget",
+        "contentKey": "A",
+        "componentType": "AssetContent"
+      },
+      {
+        "id": "7.Footer",
+        "name": "PLP Footer",
+        "configuration": "{ \"className\": \"footer\"}"
+      }
+    ]
+  },
+  "assetContentGroups": [
+    {
+      "id": "AssetContentGroup A",
+      "targetContentKey": "A",
+      "content": [
+        {
+          "id": "plp - filter",
+          "name": "plp filter component",
+          "configuration": "[{ \"attribute\": \"gender\", \"values\": [\"men\", \"women\", \"kids\"]}]"
+        },
+        {
+          "id": "plp - right container A",
+          "content": [
+            {
+              "id": "plp - right header A",
+              "configuration": "{ \"title\": \"Header A\" }"
+            },
+            {
+              "id": "plp - right products",
+              "configuration": "{ \"pill\": [] }"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "AssetContentGroup B",
+      "targetContentKey": "B",
+      "content": [
+        {
+          "id": "plp - filter",
+          "name": "plp filter component",
+          "configuration": "[{ \"attribute\": \"gender\", \"values\": [\"men\", \"women\", \"kids\"]}]"
+        },
+        {
+          "id": "plp - right container B",
+          "content": [
+            {
+              "id": "plp - right header B",
+              "configuration": "{ \"title\": \"Header B\" }"
+            },
+            {
+              "id": "plp - right products",
+              "configuration": "{ \"pill\": [] }"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "productGroup": {
+    "id": "4.Configuration"
+  }
+}

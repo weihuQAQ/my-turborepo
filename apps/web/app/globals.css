@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -32,8 +36,24 @@ a {
   text-decoration: none;
 }
 
+.GraphiQL-container {
+  height: 100vh;
+  width: 100vw;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+
+fieldset {
+  margin: 20px;
+  padding: 20px;
+  border-width: 2px;
+}
+
+legend {
+  padding: 0;
+}
+

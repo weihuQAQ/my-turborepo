@@ -1,0 +1,18 @@
+{
+  "name": "@repo/contentful",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./render": "./src/render.tsx"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "react": "^18.2.0",
+    "ky": "latest",
+    "@repo/typescript-config": "workspace:*"
+  }
+}

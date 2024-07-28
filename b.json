@@ -1,0 +1,203 @@
+[
+  {
+    "sys": {
+      "id": "1.Page"
+    },
+    "fields": {
+      "name": "PLP - all",
+      "template": {
+        "sys": {
+          "id": "2.Template"
+        }
+      },
+      "assetContentGroups": [
+        {
+          "sys": {
+            "id": "AssetContentGroup A"
+          }
+        },
+        {
+          "sys": {
+            "id": "AssetContentGroup B"
+          }
+        }
+      ],
+      "productGroup": {
+        "sys": {
+          "id": "4.Configuration"
+        }
+      }
+    }
+  },
+  {
+    "sys": {
+      "id": "2.Template"
+    },
+    "fields": {
+      "name": "PLP - Template A",
+      "content": [
+        {
+          "sys": {
+            "id": "5.Header"
+          }
+        },
+        {
+          "sys": {
+            "id": "6.AssetContentWidget"
+          }
+        },
+        {
+          "sys": {
+            "id": "7.Footer"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sys": {
+      "id": "4.Configuration"
+    },
+    "fields": {
+      "configuration": "{  }"
+    }
+  },
+  {
+    "sys": {
+      "id": "5.Header"
+    },
+    "fields": {
+      "name": "PLP Header",
+      "configuration": "{ \"className\": \"header\" }"
+    }
+  },
+  {
+    "sys": {
+      "id": "6.AssetContentWidget"
+    },
+    "fields": {
+      "contentKey": "A",
+      "componentType": "AssetContent"
+    }
+  },
+  {
+    "sys": {
+      "id": "7.Footer"
+    },
+    "fields": {
+      "name": "PLP Footer",
+      "configuration": "{ \"className\": \"footer\"}"
+    }
+  },
+  {
+    "sys": {
+      "id": "AssetContentGroup A"
+    },
+    "fields": {
+      "targetContentKey": "A",
+      "content": [
+        {
+          "sys": {
+            "id": "plp - filter"
+          }
+        },
+        {
+          "sys": {
+            "id": "plp - right container A"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sys": {
+      "id": "AssetContentGroup B"
+    },
+    "fields": {
+      "targetContentKey": "B",
+      "content": [
+        {
+          "sys": {
+            "id": "plp - filter"
+          }
+        },
+        {
+          "sys": {
+            "id": "plp - right container B"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sys": {
+      "id": "plp - filter"
+    },
+    "fields": {
+      "name": "plp filter component",
+      "configuration": "[{ \"attribute\": \"gender\", \"values\": [\"men\", \"women\",\"kids\"]}]"
+    }
+  },
+  {
+    "sys": {
+      "id": "plp - right container A"
+    },
+    "fields": {
+      "content": [
+        {
+          "sys": {
+            "id": "plp - right header A"
+          }
+        },
+        {
+          "sys": {
+            "id": "plp - right products"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sys": {
+      "id": "plp - right container B"
+    },
+    "fields": {
+      "content": [
+        {
+          "sys": {
+            "id": "plp - right header B"
+          }
+        },
+        {
+          "sys": {
+            "id": "plp - right products"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "sys": {
+      "id": "plp - right header A"
+    },
+    "fields": {
+      "configuration": "{ \"title\": \"Header A\" }"
+    }
+  },
+  {
+    "sys": {
+      "id": "plp - right header B"
+    },
+    "fields": {
+      "configuration": "{ \"title\": \"Header B\" }"
+    }
+  },
+  {
+    "sys": {
+      "id": "plp - right products"
+    },
+    "fields": {
+      "configuration": "{ \"pill\": [] }"
+    }
+  }
+]
